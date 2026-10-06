@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "scoring64",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Scoring64をブラウザで操作し、指定された正解・配点・部分点基準に従って答案を採点・保存します。",
   "author": {
     "name": "株式会社Fermion",

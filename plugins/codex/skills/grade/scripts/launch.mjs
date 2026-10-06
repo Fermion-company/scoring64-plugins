@@ -74,8 +74,11 @@ export async function fromRuntime(filename, getJSON = readJSON) {
 }
 
 export function cleanEnvironment(env = process.env) {
-  return Object.fromEntries(Object.entries(env).filter(([key]) => !key.startsWith('SCORING64_') &&
-    !['TEX64_EDITION', 'PYTHONPATH', 'PYTHONHOME'].includes(key)));
+  // Only OS paths and locale settings are needed by the local application.
+  const allowed = ['PATH', 'Path', 'HOME', 'USERPROFILE', 'LOCALAPPDATA', 'APPDATA',
+    'ProgramFiles', 'SystemRoot', 'SYSTEMROOT', 'WINDIR', 'COMSPEC', 'PATHEXT',
+    'TEMP', 'TMP', 'TMPDIR', 'LANG', 'LC_ALL', 'LC_CTYPE', 'TZ', 'XDG_CONFIG_HOME'];
+  return Object.fromEntries(allowed.filter(key => typeof env[key] === 'string').map(key => [key, env[key]]));
 }
 
 export function installedCommand(appPath, platform = process.platform) {
