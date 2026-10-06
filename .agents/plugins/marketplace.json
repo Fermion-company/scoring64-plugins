@@ -1,0 +1,12 @@
+{
+  "name": "fermion-scoring64",
+  "interface": { "displayName": "Fermion Scoring64" },
+  "plugins": [
+    {
+      "name": "scoring64",
+      "source": { "source": "local", "path": "./plugins/codex" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "fermion-scoring64",
+  "description": "Scoring64で答案を採点するプラグイン",
+  "owner": { "name": "株式会社Fermion", "email": "contact@fermion.company" },
+  "plugins": [
+    {
+      "name": "scoring64",
+      "source": "./plugins/claude",
+      "description": "Scoring64をブラウザで起動し、指定した基準に従って採点・保存します。"
+    }
+  ]
+}

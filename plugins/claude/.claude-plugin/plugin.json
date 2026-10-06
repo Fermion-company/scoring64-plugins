@@ -1,0 +1,17 @@
+{
+  "name": "scoring64",
+  "version": "0.1.1",
+  "description": "Scoring64をブラウザで操作し、指定された正解・配点・部分点基準に従って答案を採点・保存します。",
+  "author": {
+    "name": "株式会社Fermion",
+    "email": "contact@fermion.company",
+    "url": "https://fermion-company.github.io/scoring64-download/"
+  },
+  "homepage": "https://fermion-company.github.io/scoring64-download/",
+  "repository": "https://github.com/Fermion-company/scoring64-plugins",
+  "displayName": "Scoring64",
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://fermion-company.github.io/scoring64-download/guide.html",
+  "supportUrl": "https://fermion-company.github.io/scoring64-download/contact.html",
+  "privacyPolicyUrl": "https://github.com/Fermion-company/scoring64-plugins/blob/main/PRIVACY.md"
+}

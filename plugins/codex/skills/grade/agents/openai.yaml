@@ -1,0 +1,6 @@
+interface:
+  display_name: "Scoring64で採点"
+  short_description: "Scoring64をブラウザで起動し、指定された採点基準に従って答案を採点・保存します"
+  default_prompt: "$grade を使い、Scoring64でこの答案を指定した基準に従って採点し、結果を保存してください。"
+policy:
+  allow_implicit_invocation: true
