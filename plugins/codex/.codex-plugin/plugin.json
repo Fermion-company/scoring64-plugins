@@ -15,7 +15,7 @@
     "shortDescription": "ブラウザで答案を採点・保存",
     "longDescription": "Scoring64をブラウザで操作し、指定された正解・配点・部分点基準に従って答案を採点・保存します。 Scoring64本体と同じPCのローカルコマンド・ブラウザ操作機能、Node.js 18以上が必要です。答案の取り込みから、記述の満点・部分点・未採点の管理、結果CSVや返却PDFの保存まで進めます。教員が示した採点基準を使い、判読不能や基準不足の答案は未採点で残します。Scoring64本体の利用権限に従って操作します。AIが読む答案は利用中のAIサービスに渡る場合があります。",
     "developerName": "株式会社Fermion",
-    "category": "Productivity",
+    "category": "Education & Research",
     "capabilities": [
       "答案取り込み",
       "基準に従った採点",
