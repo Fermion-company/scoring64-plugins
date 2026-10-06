@@ -8,6 +8,16 @@ Install Scoring64 from [the product website](https://fermion-company.github.io/s
 
 Ask the agent: “Open Scoring64, grade these answer sheets using the attached answer key and partial-credit rubric, and save the results CSV.” The grade skill starts or reconnects to the application. Provide the exam, answer files, scoring criteria, and desired output. The application enforces its existing license entitlement; the plugin does not change licensing or make purchases. Work stops at an unavailable operation and can resume when the required entitlement is available.
 
+This workflow is intended for adult teachers and grading staff. Do not send personal information about children under 13 to the AI provider. Prepare anonymized answer sheets and exam records before the agent views them. Official assessment results require teacher review.
+
+Three example requests:
+
+1. “Open the built-in fictional sample exam in Scoring64 and show the grading and export screens. Do not change scores.”
+2. “Grade these anonymized answer sheets using the attached answer key and partial-credit rubric. Leave illegible answers ungraded.”
+3. “Open this completed exam, check the ungraded and review counts, and save the results CSV. Report the output file path.”
+
+For reviewer testing, install Scoring64 locally and choose the built-in fictional sample on the home screen; no account or production student data is required. Use the first example to inspect the sample without fabricating a rubric or changing grades. If the launcher cannot find the application, use its documented `--app` option with the installation's absolute path. If local command or browser access is unavailable, run in a local host with those tools.
+
 ## Data handling
 
 Answer PDFs, names, student numbers, scores, and exports are processed and stored by Scoring64 on the local computer. The plugin launcher connects only to HTTP loopback addresses, reads local runtime metadata, and checks application health and license status. It sends no answer files to a Fermion plugin server, includes no analytics, and prints no license keys or PC codes. The AI agent's browser tools may send screenshots, answer text, names, and scoring instructions to the AI provider used by the user. The provider's account settings and policies govern that processing; this is not fully offline AI grading. Share only files you are authorized to process, and minimize identifying information when possible. See [the plugin privacy notice](https://github.com/Fermion-company/scoring64-plugins/blob/main/PRIVACY.md).

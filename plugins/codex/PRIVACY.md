@@ -1,6 +1,6 @@
 # Scoring64 plugin privacy notice
 
-Effective date: October 6, 2026. Publisher: 株式会社Fermion. This notice covers the Scoring64 plugins for Codex and Claude, version 0.1.2.
+Effective date: October 6, 2026. Publisher: 株式会社Fermion. This notice covers the Scoring64 plugins for Codex and Claude, version 0.1.3.
 
 ## Purpose and information used
 
@@ -13,6 +13,8 @@ Scoring64 stores and processes application data on the local computer. The bundl
 ## AI provider and external websites
 
 Browser tools used by the AI agent may send screenshots, visible answers, names, text, scoring criteria, and conversation content to the user's AI provider, such as OpenAI or Anthropic. Processing, retention, and training settings are governed by that provider's terms, privacy policy, and the user's account settings. Local Scoring64 storage does not make the AI workflow fully offline. The plugin does not control the provider's retention settings. Visiting linked product, support, or GitHub pages involves those websites' own data handling.
+
+Provider policies: [OpenAI privacy policy](https://openai.com/policies/privacy-policy/), [Anthropic privacy policy](https://www.anthropic.com/legal/privacy). This plugin is intended for adult teachers and grading staff. Personal information about children under 13 must be removed from answers and exam records before those materials are shown to the AI agent.
 
 ## Storage and user control
 
