@@ -26,6 +26,7 @@
         "websiteURL": "https://scoring64.fermion.company/",
         "supportURL": "https://scoring64.fermion.company/contact.html",
         "privacyPolicyURL": "https://github.com/Fermion-company/scoring64-plugins/blob/main/PRIVACY.md",
+        "termsOfServiceURL": "https://scoring64.fermion.company/terms.html",
         "defaultPrompt": [
           "Scoring64を起動して、この答案を指定した採点基準で採点し、結果CSVを保存してください。"
         ],
