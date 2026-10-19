@@ -1,14 +1,14 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "scoring64",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Scoring64をブラウザで操作し、指定された正解・配点・部分点基準に従って答案を採点・保存します。",
   "author": {
     "name": "株式会社Fermion",
     "email": "contact@fermion.company",
-    "url": "https://fermion-company.github.io/scoring64-download/"
+    "url": "https://scoring64.fermion.company/"
   },
-  "homepage": "https://fermion-company.github.io/scoring64-download/",
+  "homepage": "https://scoring64.fermion.company/",
   "repository": "https://github.com/Fermion-company/scoring64-plugins",
   "extensions": {
     "com.openai": {
@@ -23,8 +23,8 @@
           "基準に従った採点",
           "結果保存"
         ],
-        "websiteURL": "https://fermion-company.github.io/scoring64-download/",
-        "supportURL": "https://fermion-company.github.io/scoring64-download/contact.html",
+        "websiteURL": "https://scoring64.fermion.company/",
+        "supportURL": "https://scoring64.fermion.company/contact.html",
         "privacyPolicyURL": "https://github.com/Fermion-company/scoring64-plugins/blob/main/PRIVACY.md",
         "defaultPrompt": [
           "Scoring64を起動して、この答案を指定した採点基準で採点し、結果CSVを保存してください。"

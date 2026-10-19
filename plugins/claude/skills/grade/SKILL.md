@@ -17,7 +17,7 @@ node "/absolute/path/to/skills/grade/scripts/launch.mjs"
 
 起動済みのアプリを再利用し、なければインストール済みのScoring64を起動する。出力の `url` を環境のブラウザ操作ツールで開く。ツールの説明に従って画面を読む。アプリのウィンドウは閉じない（閉じるとブラウザの接続も終了する）。
 
-見つからない場合だけ `node ".../scripts/launch.mjs" --help` を読み、ユーザーが示した `--app` または `--runtime-file` を使う。未インストールの場合は https://fermion-company.github.io/scoring64-download/ を案内する。ユーザーがソース版を指定した場合だけ `--source-root` を使う。勝手なダウンロード・依存関係のインストール・有料APIの有効化はしない。
+見つからない場合だけ `node ".../scripts/launch.mjs" --help` を読み、ユーザーが示した `--app` または `--runtime-file` を使う。未インストールの場合は https://scoring64.fermion.company/ を案内する。ユーザーがソース版を指定した場合だけ `--source-root` を使う。勝手なダウンロード・依存関係のインストール・有料APIの有効化はしない。
 
 ## 採点
 

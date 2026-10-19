@@ -4,7 +4,7 @@ Scoring64 helps a local AI agent grade scanned answer sheets in the user's brows
 
 ## Requirements and use
 
-Install Scoring64 from [the product website](https://fermion-company.github.io/scoring64-download/). This plugin requires Node.js 18 or later, local command execution, and a browser control tool connected to the same computer as Scoring64. Those tools and the application are not bundled. A remote or isolated environment cannot access the user's computer through its own localhost. Browser-only Claude sessions without local access are not supported.
+Install Scoring64 from [the product website](https://scoring64.fermion.company/). This plugin requires Node.js 18 or later, local command execution, and a browser control tool connected to the same computer as Scoring64. Those tools and the application are not bundled. A remote or isolated environment cannot access the user's computer through its own localhost. Browser-only Claude sessions without local access are not supported.
 
 Ask the agent: “Open Scoring64, grade these answer sheets using the attached answer key and partial-credit rubric, and save the results CSV.” The grade skill starts or reconnects to the application. Provide the exam, answer files, scoring criteria, and desired output. The application enforces its existing license entitlement; the plugin does not change licensing or make purchases. Work stops at an unavailable operation and can resume when the required entitlement is available.
 
@@ -26,4 +26,4 @@ Answer PDFs, names, student numbers, scores, and exports are processed and store
 
 Both packages are distributed from [Fermion-company/scoring64-plugins](https://github.com/Fermion-company/scoring64-plugins). The Codex package is in `plugins/codex`, and the Claude Code package is in `plugins/claude`. Add that repository as a plugin marketplace in the relevant host, then install `scoring64@fermion-scoring64`. Each package contains one grade skill and its dependency-free local launcher. No MCP server, additional model subscription, or paid API is configured by this plugin.
 
-[User guide](https://fermion-company.github.io/scoring64-download/guide.html) · [Support](https://fermion-company.github.io/scoring64-download/contact.html)
+[User guide](https://scoring64.fermion.company/guide.html) · [Support](https://scoring64.fermion.company/contact.html)

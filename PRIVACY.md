@@ -22,4 +22,4 @@ Fermion does not receive answer data through the plugin launcher and maintains n
 
 ## Contact
 
-For questions about this plugin, contact [Scoring64 support](https://fermion-company.github.io/scoring64-download/contact.html) or contact@fermion.company. Questions about AI-provider records should be directed to the provider used for the session.
+For questions about this plugin, contact [Scoring64 support](https://scoring64.fermion.company/contact.html) or contact@fermion.company. Questions about AI-provider records should be directed to the provider used for the session.

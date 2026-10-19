@@ -8,7 +8,7 @@ import {spawn} from 'node:child_process';
 import {randomUUID} from 'node:crypto';
 import {pathToFileURL} from 'node:url';
 
-export const WEBSITE = 'https://fermion-company.github.io/scoring64-download/';
+export const WEBSITE = 'https://scoring64.fermion.company/';
 const MAX_JSON = 32 * 1024;
 
 export function localURL(value) {
