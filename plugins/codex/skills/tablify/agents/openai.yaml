@@ -1,0 +1,6 @@
+interface:
+  display_name: "表をtblrに起こす"
+  short_description: "Excel・画像・PDFの表をtabularrayのtblrに起こし、文書や用紙に入れられる形にします"
+  default_prompt: "$tablify を使い、この表をtabularrayのtblrに起こしてください。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "解答欄の切り出しを確認"
+  short_description: "外部PDFから作った試験の解答欄の切り出しを用紙と見比べ、ずれや検出漏れを直します"
+  default_prompt: "$check-fields を使い、Scoring64のこの試験の解答欄の切り出しを確かめて直してください。"
+policy:
+  allow_implicit_invocation: true

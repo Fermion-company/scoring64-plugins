@@ -8,6 +8,8 @@ Install Scoring64 from [the product website](https://scoring64.fermion.company/)
 
 Ask the agent: “Open Scoring64, grade these answer sheets using the attached answer key and partial-credit rubric, and save the results CSV.” The grade skill starts or reconnects to the application. Provide the exam, answer files, scoring criteria, and desired output. The application enforces its existing license entitlement; the plugin does not change licensing or make purchases. Work stops at an unavailable operation and can resume when the required entitlement is available.
 
+Three more skills come with 0.2.0. check-fields compares the answer-field crops of an exam made from an external PDF (Word, Excel or a scanned sheet) with the page images and fixes shifted, clipped, misnumbered or missed fields through the application's own screens; it does not change answers, points or results. tikzify turns a figure (a photo of a hand drawing, a screenshot, a PDF or SVG figure) into TikZ, and tablify turns a table (Excel, CSV, a screenshot or a PDF table) into a tabularray table, each ready to `\input` into a LaTeX document; they need Python 3.7 or later, ImageMagick 7, Poppler and a TeX installation on the same computer.
+
 This workflow is intended for adult teachers and grading staff. Do not send personal information about children under 13 to the AI provider. Prepare anonymized answer sheets and exam records before the agent views them. Official assessment results require teacher review.
 
 Three example requests:
@@ -24,6 +26,6 @@ Answer PDFs, names, student numbers, scores, and exports are processed and store
 
 ## Installation
 
-Both packages are distributed from [Fermion-company/scoring64-plugins](https://github.com/Fermion-company/scoring64-plugins). The Codex package is in `plugins/codex`, and the Claude Code package is in `plugins/claude`. Add that repository as a plugin marketplace in the relevant host, then install `scoring64@fermion-scoring64`. Each package contains one grade skill and its dependency-free local launcher. No MCP server, additional model subscription, or paid API is configured by this plugin.
+Both packages are distributed from [Fermion-company/scoring64-plugins](https://github.com/Fermion-company/scoring64-plugins). The Codex package is in `plugins/codex`, and the Claude Code package is in `plugins/claude`. Add that repository as a plugin marketplace in the relevant host, then install `scoring64@fermion-scoring64`. Each package contains the grade skill with its dependency-free local launcher, and the check-fields, tikzify and tablify skills. No MCP server, additional model subscription, or paid API is configured by this plugin.
 
 [User guide](https://scoring64.fermion.company/guide.html) · [Support](https://scoring64.fermion.company/contact.html)

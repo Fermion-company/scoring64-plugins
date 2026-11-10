@@ -1,7 +1,7 @@
 {
   "name": "scoring64",
-  "version": "0.1.4",
-  "description": "Scoring64をブラウザで操作し、指定された正解・配点・部分点基準に従って答案を採点・保存します。",
+  "version": "0.2.0",
+  "description": "Scoring64をブラウザで操作し、指定された正解・配点・部分点基準に従って答案を採点・保存します。外部PDFの解答欄の切り出しの確認・修正と、図・表のTeX化（tikzify・tablify）も行えます。",
   "author": {
     "name": "株式会社Fermion",
     "email": "contact@fermion.company",

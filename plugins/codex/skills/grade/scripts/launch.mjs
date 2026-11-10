@@ -39,6 +39,13 @@ export async function readJSON(url) {
   return JSON.parse(Buffer.concat(chunks).toString('utf8'));
 }
 
+// Scoring64 1.1.0+ reports a monthly free allowance; older apps omit these fields.
+export function monthlyAllowance(licence) {
+  if (licence.plan !== 'free' || !Number.isInteger(licence.monthlyLimit)) return {};
+  return {plan: 'free', monthlyLimit: licence.monthlyLimit, monthlyRemaining: licence.monthlyRemaining,
+    resetsAt: licence.resetsAt, newGradingAllowed: Boolean(licence.newGradingAllowed)};
+}
+
 export async function verifyConnection(url, expected = {}, getJSON = readJSON) {
   url = localURL(url);
   const health = await getJSON(url + '/api/v1/health');
@@ -51,14 +58,15 @@ export async function verifyConnection(url, expected = {}, getJSON = readJSON) {
     throw new Error('Scoring64の起動情報が古いか、別のアプリに接続しています。');
   }
   const licence = await getJSON(url + '/api/v1/license');
-  const states = ['none', 'invalid', 'trial', 'subscription', 'perpetual'];
+  // 'free': a free period (every paid feature open; backend/scoring64/campaign.py)
+  const states = ['none', 'invalid', 'trial', 'subscription', 'perpetual', 'free'];
   if (!states.includes(licence.state) || typeof licence.exportAllowed !== 'boolean') {
     throw new Error('通常のScoring64ライセンスを確認できません。');
   }
   return {
     status: 'ready', url, version: health.version, paidAllowed: licence.exportAllowed,
     licence: {state: licence.state, expired: Boolean(licence.expired), daysLeft: licence.daysLeft,
-      reason: licence.reason},
+      reason: licence.reason, ...monthlyAllowance(licence)},
     freeMarkReaderAvailable: true,
   };
 }

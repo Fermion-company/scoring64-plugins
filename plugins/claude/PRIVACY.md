@@ -8,7 +8,7 @@ The plugins instruct an AI agent to operate Scoring64 on the user's computer to 
 
 ## Local application and launcher
 
-Scoring64 stores and processes application data on the local computer. The bundled launcher reads local application runtime information and checks health and license status through HTTP loopback addresses. It may start the installed application. It does not upload answers, collect analytics, or connect to a Fermion plugin server. It omits license keys and PC codes from its output. The plugin does not set up a remote MCP server.
+Scoring64 stores and processes application data on the local computer. The bundled launcher reads local application runtime information and checks health and license status through HTTP loopback addresses. It may start the installed application. It does not upload answers, collect analytics, or connect to a Fermion plugin server. It omits license keys and PC codes from its output. The plugin does not set up a remote MCP server. The tikzify and tablify skills run their scripts and TeX on the local computer and write their results next to the user's files; they do not upload images or tables anywhere themselves.
 
 ## AI provider and external websites
 

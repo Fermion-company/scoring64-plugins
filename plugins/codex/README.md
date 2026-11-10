@@ -1,6 +1,6 @@
 # Scoring64
 
-Scoring64 helps a local AI agent grade scanned answer sheets in the user's browser. The agent opens the installed Scoring64 application, imports the answer files selected by the user, applies the supplied answer key and scoring rubric, and saves the requested results. It checks the current student and question after each change. Illegible answers or missing criteria remain ungraded for the teacher to review. The teacher reviews results before using them for an official assessment.
+Scoring64 helps a local AI agent grade scanned answer sheets in the user's browser, check the answer fields cut from imported PDF sheets, and turn figures and tables into TeX for exam sheets. The agent opens the installed Scoring64 application, imports the answer files selected by the user, applies the supplied answer key and scoring rubric, and saves the requested results. It checks the current student and question after each change. Illegible answers or missing criteria remain ungraded for the teacher to review. The teacher reviews results before using them for an official assessment.
 
 ## Requirements and use
 
@@ -9,6 +9,10 @@ Install Scoring64 from [the product website](https://scoring64.fermion.company/)
 Ask the agent: “Open Scoring64, grade these answer sheets using the attached answer key and partial-credit rubric, and save the results CSV.” The grade skill starts or reconnects to the application. Provide the exam, answer files, scoring criteria, and desired output. The application enforces its existing license entitlement; the plugin does not change licensing or make purchases. Work stops at an unavailable operation and can resume when the required entitlement is available.
 
 This workflow is intended for adult teachers and grading staff. Do not send personal information about children under 13 to the AI provider. Prepare anonymized answer sheets and exam records before the agent views them. Official assessment results require teacher review.
+
+The `check-fields` skill compares each answer field of an exam made from an external PDF (Word, Excel or a scanned paper) with the sheet image, fixes shifted, clipped, mislabeled or missing fields through the application's own screens, and asks the teacher about anything that needs judgment. It does not change answer keys, points or scores.
+
+The `tikzify` and `tablify` skills turn figures and tables (photos, screenshots, PDF, Excel and others) into TikZ and tabularray code with a compiled PDF, ready for a LaTeX document or a Scoring64 sheet. They run locally and need Python 3.7 or later, ImageMagick 7, poppler and a TeX distribution such as TeX Live; `tikzify` also uses numpy, and Ghostscript for EPS input.
 
 Three example requests:
 
@@ -24,6 +28,6 @@ Answer PDFs, names, student numbers, scores, and exports are processed and store
 
 ## Installation
 
-Both packages are distributed from [Fermion-company/scoring64-plugins](https://github.com/Fermion-company/scoring64-plugins). The Codex package is in `plugins/codex`, and the Claude Code package is in `plugins/claude`. Add that repository as a plugin marketplace in the relevant host, then install `scoring64@fermion-scoring64`. Each package contains one grade skill and its dependency-free local launcher. No MCP server, additional model subscription, or paid API is configured by this plugin.
+Both packages are distributed from [Fermion-company/scoring64-plugins](https://github.com/Fermion-company/scoring64-plugins). The Codex package is in `plugins/codex`, and the Claude Code package is in `plugins/claude`. Add that repository as a plugin marketplace in the relevant host, then install `scoring64@fermion-scoring64`. Each package contains four skills: grade with its dependency-free local launcher, check-fields, tikzify and tablify (the last two include local Python scripts and TeX templates). No MCP server, additional model subscription, or paid API is configured by this plugin.
 
 [User guide](https://scoring64.fermion.company/guide.html) · [Support](https://scoring64.fermion.company/contact.html)

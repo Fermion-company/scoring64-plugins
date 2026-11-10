@@ -1,0 +1,6 @@
+interface:
+  display_name: "図をTikZに起こす"
+  short_description: "手書きや画像の図をTikZに起こし、LaTeX文書やScoring64の用紙に入れられる形にします"
+  default_prompt: "$tikzify を使い、この図をTikZに起こしてください。"
+policy:
+  allow_implicit_invocation: true
