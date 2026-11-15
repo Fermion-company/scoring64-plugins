@@ -1,0 +1,6 @@
+interface:
+  display_name: "解答用紙を作る"
+  short_description: "「東大の理科をA3で」のような短い依頼から東大用紙や普通の用紙を作り、配点を設定して発行します"
+  default_prompt: "$make-sheet を使い、Scoring64で東大の理科の解答用紙をA3で作ってください。"
+policy:
+  allow_implicit_invocation: true

@@ -10,6 +10,8 @@ Ask the agent: “Open Scoring64, grade these answer sheets using the attached a
 
 This workflow is intended for adult teachers and grading staff. Do not send personal information about children under 13 to the AI provider. Prepare anonymized answer sheets and exam records before the agent views them. Official assessment results require teacher review.
 
+The `make-sheet` skill turns a short request such as “a University of Tokyo science answer sheet on A3, 20 points per question” into a new exam: it opens the built-in sheet by its id (`?new=1&template=<id>`), sets names and points through the application's screens, and issues it when asked. Ordinary sheets are built from the application's own parts without writing TeX.
+
 The `check-fields` skill compares each answer field of an exam made from an external PDF (Word, Excel or a scanned paper) with the sheet image, fixes shifted, clipped, mislabeled or missing fields through the application's own screens, and asks the teacher about anything that needs judgment. It does not change answer keys, points or scores.
 
 The `tikzify` and `tablify` skills turn figures and tables (photos, screenshots, PDF, Excel and others) into TikZ and tabularray code with a compiled PDF, ready for a LaTeX document or a Scoring64 sheet. They run locally and need Python 3.7 or later, ImageMagick 7, poppler and a TeX distribution such as TeX Live; `tikzify` also uses numpy, and Ghostscript for EPS input.
@@ -28,6 +30,6 @@ Answer PDFs, names, student numbers, scores, and exports are processed and store
 
 ## Installation
 
-Both packages are distributed from [Fermion-company/scoring64-plugins](https://github.com/Fermion-company/scoring64-plugins). The Codex package is in `plugins/codex`, and the Claude Code package is in `plugins/claude`. Add that repository as a plugin marketplace in the relevant host, then install `scoring64@fermion-scoring64`. Each package contains four skills: grade with its dependency-free local launcher, check-fields, tikzify and tablify (the last two include local Python scripts and TeX templates). No MCP server, additional model subscription, or paid API is configured by this plugin.
+Both packages are distributed from [Fermion-company/scoring64-plugins](https://github.com/Fermion-company/scoring64-plugins). The Codex package is in `plugins/codex`, and the Claude Code package is in `plugins/claude`. Add that repository as a plugin marketplace in the relevant host, then install `scoring64@fermion-scoring64`. Each package contains five skills: grade with its dependency-free local launcher, make-sheet, check-fields, tikzify and tablify (the last two include local Python scripts and TeX templates). No MCP server, additional model subscription, or paid API is configured by this plugin.
 
 [User guide](https://scoring64.fermion.company/guide.html) · [Support](https://scoring64.fermion.company/contact.html)

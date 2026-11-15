@@ -10,6 +10,8 @@ Ask the agent: “Open Scoring64, grade these answer sheets using the attached a
 
 Three more skills come with 0.2.0. check-fields compares the answer-field crops of an exam made from an external PDF (Word, Excel or a scanned sheet) with the page images and fixes shifted, clipped, misnumbered or missed fields through the application's own screens; it does not change answers, points or results. tikzify turns a figure (a photo of a hand drawing, a screenshot, a PDF or SVG figure) into TikZ, and tablify turns a table (Excel, CSV, a screenshot or a PDF table) into a tabularray table, each ready to `\input` into a LaTeX document; they need Python 3.7 or later, ImageMagick 7, Poppler and a TeX installation on the same computer.
 
+0.3.0 adds make-sheet and follows Scoring64 1.3.0. make-sheet turns a short request such as “a University of Tokyo science answer sheet on A3, 20 points per question” into a new exam: it opens a built-in sheet, or builds an ordinary school test from the application's own parts without writing TeX, sets names and points through the application's screens, and issues it when asked. grade and check-fields describe the screens of 1.3.0; use them with Scoring64 1.3.0 or later.
+
 This workflow is intended for adult teachers and grading staff. Do not send personal information about children under 13 to the AI provider. Prepare anonymized answer sheets and exam records before the agent views them. Official assessment results require teacher review.
 
 Three example requests:
