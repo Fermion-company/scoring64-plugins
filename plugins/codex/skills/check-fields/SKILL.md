@@ -1,7 +1,10 @@
 ---
 name: check-fields
 description: Scoring64でWord・Excel・紙のスキャンなど外部のPDFから作った試験の解答欄を、用紙の画像と見比べて確かめ、切り出しのずれ・欠け・番号や種類の取り違え・検出漏れを画面操作で直す。答案の取り込みで位置合わせに失敗したページも確かめる。「切り出しがずれている」「解答欄がうまく検出されない」「解答欄を確認して直して」「直すページがある」などで使う。
+license: "Proprietary; see LICENSE"
 ---
+
+Copyright (c) 2026 Kosei Kawaguchi. All rights reserved. See [LICENSE](LICENSE).
 
 # 解答欄の切り出しを確かめて直す
 

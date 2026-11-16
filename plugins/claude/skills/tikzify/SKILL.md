@@ -1,7 +1,10 @@
 ---
 name: tikzify
 description: 手書きの図(紙・ホワイトボードの写真、スキャン、タブレットのメモ)や、別形式の図版(PNG/JPGのスクショ、PDF/SVG/EPS、PowerPoint・Keynote・draw.io・Excalidrawの図、Mermaid/Graphviz、matplotlib・Excelのグラフ、論文の図)をTikZに起こし、自分のLaTeX文書へそのまま\inputで挿入できる形(.tikz + 必要パッケージ + figure環境)で納品する。利用者の依頼(大きさ、色、線の太さ、ラベルの言葉など)を依頼表に書き出して必ず反映し、座標グリッドで読み取り、元画像との重ね合わせで検証し、文書のプリアンブルへ不足分だけ追記する。「この図をTikZにして」「手書きをtikzで清書」「図をLaTeXで描き直して」「この画像をtikzに起こして論文に入れたい」「pgfplotsで再現」などで使う。
+license: "MIT; see LICENSE.md"
 ---
+
+Copyright (c) 2026 Kosei Kawaguchi. Licensed under the MIT License; see [LICENSE.md](LICENSE.md).
 
 # tikzify: 図版をTikZに起こして文書へ挿入する
 

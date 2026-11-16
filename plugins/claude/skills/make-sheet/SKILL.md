@@ -1,7 +1,10 @@
 ---
 name: make-sheet
 description: Scoring64で解答用紙を作る。小テストや定期テストの用紙を、解答欄・マーク欄・氏名欄などの部品を並べてTeXを書かずに作り、配点・正解を入れ、求められれば発行まで進める。「東大の理科の解答用紙をA3で」「東大風のノート B5」のような依頼では内蔵の東大用紙を1つに決めて開き、内蔵にない形式は写真から部品で組む。用紙・解答用紙・答案用紙を作ってほしいと頼まれたときに使う。
+license: "Proprietary; see LICENSE"
 ---
+
+Copyright (c) 2026 Kosei Kawaguchi. All rights reserved. See [LICENSE](LICENSE).
 
 # 解答用紙を作る
 

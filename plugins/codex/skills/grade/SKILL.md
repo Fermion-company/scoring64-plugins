@@ -1,7 +1,10 @@
 ---
 name: grade
 description: Scoring64をローカルで起動し、ブラウザで答案の取り込み・正解と配点の確認・採点・結果保存を行う。Scoring64での採点を依頼されたときに使う。
+license: "Proprietary; see LICENSE"
 ---
+
+Copyright (c) 2026 Kosei Kawaguchi. All rights reserved. See [LICENSE](LICENSE).
 
 # Scoring64で採点する
 

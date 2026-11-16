@@ -33,3 +33,11 @@ Answer PDFs, names, student numbers, scores, and exports are processed and store
 Both packages are distributed from [Fermion-company/scoring64-plugins](https://github.com/Fermion-company/scoring64-plugins). The Codex package is in `plugins/codex`, and the Claude Code package is in `plugins/claude`. Add that repository as a plugin marketplace in the relevant host, then install `scoring64@fermion-scoring64`. Each package contains five skills: grade with its dependency-free local launcher, make-sheet, check-fields, tikzify and tablify (the last two include local Python scripts and TeX templates). No MCP server, additional model subscription, or paid API is configured by this plugin.
 
 [User guide](https://scoring64.fermion.company/guide.html) · [Support](https://scoring64.fermion.company/contact.html)
+
+## Authorship and copyright
+
+Copyright (c) 2026 Kosei Kawaguchi. All rights reserved.
+
+Kosei Kawaguchi is the sole author and exclusive copyright holder of the original Scoring64 application and the original proprietary plugin code and documentation. 株式会社Fermion (Fermion Inc.) publishes and supports Scoring64; the publishing, repository and distribution account names do not transfer authorship or copyright.
+
+The proprietary materials are subject to [LICENSE](LICENSE). Public access does not grant permission to copy, modify, redistribute, sublicense, sell or create derivative works, except as permitted by applicable law, the hosting platform's terms or an express license. The tikzify and tablify skills retain their separate MIT licenses and copyright notices; third-party components retain their own licenses. Authorized use of Scoring64 follows its applicable end-user license and customer terms.

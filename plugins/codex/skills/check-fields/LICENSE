@@ -1,0 +1,42 @@
+Scoring64 — Proprietary Software and Copyright Notice
+
+Copyright (c) 2026 Kosei Kawaguchi.
+All rights reserved.
+
+AUTHORSHIP AND OWNERSHIP
+
+Kosei Kawaguchi is the sole author and exclusive copyright holder of the
+original Scoring64 application and the original proprietary code, user interface
+designs, and documentation in this repository, excluding the third-party and
+separately licensed components described below. All copyrights, including rights
+of reproduction, adaptation, distribution, public transmission, and exploitation
+of derivative works, are reserved.
+
+Ownership or administration of a repository, developer account, publishing
+account, or distribution channel does not by itself confer or transfer copyright.
+Publication, distribution, or licensing by a company or another person does not
+by itself transfer Kosei Kawaguchi's copyright.
+
+PERMISSIONS AND RESTRICTIONS
+
+Except as permitted by applicable law, the hosting platform's applicable terms,
+or a separate express license from Kosei Kawaguchi or an authorized licensor, no
+permission is granted to use, copy, modify, adapt, redistribute, sublicense, sell,
+or create derivative works of the proprietary materials. Public availability of
+this repository does not make those materials open source or grant any additional
+license. Copyright and authorship notices must not be removed or misrepresented
+except as permitted by applicable law or an express license.
+
+SEPARATELY LICENSED COMPONENTS
+
+Third-party components and materials covered by a separate license remain subject
+to their respective copyright notices and licenses. In particular, the tikzify
+and tablify skills retain their existing MIT licenses in their LICENSE.md files.
+This notice does not revoke, replace, or restrict rights granted under those
+licenses or other existing valid licenses.
+
+END-USER LICENSING
+
+This notice identifies authorship, ownership, and reserved rights; it is not an
+end-user license agreement. Use of an authorized Scoring64 distribution is
+governed by its applicable end-user license and customer terms.

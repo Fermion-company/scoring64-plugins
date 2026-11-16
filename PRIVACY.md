@@ -1,6 +1,6 @@
 # Scoring64 plugin privacy notice
 
-Effective date: October 6, 2026. Publisher: 株式会社Fermion. This notice covers the Scoring64 plugins for Codex and Claude, version 0.1.3.
+Effective date: October 6, 2026. Publisher: 株式会社Fermion. Author and copyright holder of the original proprietary materials: Kosei Kawaguchi (see [LICENSE](LICENSE)). This notice covers the Scoring64 plugins for Codex and Claude, version 0.1.3.
 
 ## Purpose and information used
 

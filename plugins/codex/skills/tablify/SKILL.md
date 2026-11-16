@@ -1,7 +1,10 @@
 ---
 name: tablify
 description: 表(Excel・CSV・スクショ・写真・PDF・Word/PowerPointの表・HTML・Markdown)を tabularray の tblr に起こし、自分のLaTeX文書へそのまま\inputで挿入できる形(.tblr + 必要パッケージ + table環境)で納品する。利用者の依頼(罫線、揃え、幅、色、単位の書き方など)を依頼表に書き出して必ず反映し、元の表の中身との照合、セル数の検査、元画像との重ね合わせで確かめる。「この表をtblrにして」「Excelの表を論文に入れたい」「スクショの表をLaTeXで組み直して」「三線表にして」「tabularrayで表を作って」などで使う。
+license: "MIT; see LICENSE.md"
 ---
+
+Copyright (c) 2026 Kosei Kawaguchi. Licensed under the MIT License; see [LICENSE.md](LICENSE.md).
 
 # tablify: 表を tabularray(tblr)に起こして文書へ挿入する
 

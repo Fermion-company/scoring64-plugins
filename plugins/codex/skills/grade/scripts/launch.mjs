@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// Copyright (c) 2026 Kosei Kawaguchi. All rights reserved. See ../../../LICENSE.
 /** Discover/start the existing local app. No scoring writes or license changes. */
 import fs from 'node:fs';
 import os from 'node:os';
